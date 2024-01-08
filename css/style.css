@@ -7,6 +7,8 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --graytint: #D9D9D9;
+    --lightblue: #DEEBFF;
 }
 
 .fa-solid {
@@ -60,6 +62,7 @@ body {
     background: var(--main-bg-color);
     padding: 12px;
     border-radius: 15px 0px 0px 15px;
+    color: black;
 }
 
 /** Champ de recherche **/
@@ -69,6 +72,7 @@ body {
     border-bottom: 2px solid var(--main-bg-color);
     border-left: 0;
     padding: 12px;
+    font-weight: bold;
 }
 
 /** Bouton "Rechercher" (desktop) **/
@@ -78,6 +82,7 @@ body {
     padding: 12px;
     border-radius: 0px 15px 15px 0px;
     border: none;
+    font-weight: bold;
 }
 
 /** Icône "Rechercher" (phone) **/
@@ -91,6 +96,42 @@ body {
     margin-left: -15px;
 }
 
+.filtres {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.filtres a {
+    border: 2px solid var(--graytint);
+    border-radius: 25px;
+    padding: 10px 20px 10px 10px;
+    margin: 10px;
+}
+
+.filtres a:hover {
+    background: var(--lightblue);
+}
+
+.filtres a > * {
+    margin: 0px 8px 0px 8px;
+}
+
+.result-count {
+    display: flex;
+    align-items: center;
+}
+
+.result-count > * {
+    margin-right: 15px;
+}
+
+.fa-info {
+    border: 1px solid var(--graytint);
+    border-radius: 50%;
+    padding: 5px 8px 7px 9px;
+    font-size: 0.75em;
+}
 
 .main-container {
     width: 100%;
