@@ -17,14 +17,16 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
 }
 
 nav a { 
-    margin: 10px;
+    padding: 18px;
 }
 
 nav a:hover {
-    border-top: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    color: var(--main-color);
 }
 
 body {
@@ -177,5 +179,8 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    nav a:hover {
+        border-top: none;
+        border-bottom: 2px var(--main-color) solid;
+    }
 }
