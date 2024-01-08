@@ -19,6 +19,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-size: 18px;
+}
+
 p { 
     margin: 0px;
 }
@@ -48,6 +52,7 @@ body {
 .recherche > * {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 5px
 }
 
 .searchbar {
@@ -98,6 +103,7 @@ body {
 
 .filtres {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: bold;
 }
