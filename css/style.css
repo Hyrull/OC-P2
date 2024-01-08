@@ -53,7 +53,7 @@ body {
 }
 
 /** Icone GPS **/
-.searchbar i {
+.fa-location-dot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body {
     padding: 12px;
 }
 
-/** Bouton "Rechercher" **/
+/** Bouton "Rechercher" (desktop) **/
 .searchbar button {
     background: var(--main-color);
     color: white;
@@ -80,9 +80,17 @@ body {
     border: none;
 }
 
-.searchbar input[type="submit"]:hover {
-    opacity: 1;
-}  
+/** Icône "Rechercher" (phone) **/
+.fa-magnifying-glass {
+    background: var(--main-color);
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 3px 3px 0 rgb(179, 179, 179);
+    margin-left: -15px;
+}
+
 
 .main-container {
     width: 100%;
@@ -194,6 +202,13 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* Anything above the phone width devices (more than 768px) */
+@media (min-width: 767.98px) {
+    .fa-magnifying-glass {
+        display:none;
+    }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -233,5 +248,8 @@ a {
     nav a:hover {
         border-top: none;
         border-bottom: 2px var(--main-color) solid;
+    }
+    .searchbar button {
+        display:none;
     }
 }
