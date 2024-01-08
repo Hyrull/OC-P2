@@ -13,15 +13,24 @@
     color: var(--main-color);
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
+p { 
+    margin: 0px;
+}
+
 header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 nav a { 
-    padding: 18px;
+    padding: 10px;
+    margin: 15px;
 }
 
 nav a:hover {
@@ -33,6 +42,47 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.recherche > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.searchbar {
+    display:flex;
+}
+
+/** Icone GPS **/
+.searchbar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg-color);
+    padding: 12px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/** Champ de recherche **/
+.searchbar input[type="text"]{
+    border-top: 2px solid var(--main-bg-color);
+    border-right: 0;
+    border-bottom: 2px solid var(--main-bg-color);
+    border-left: 0;
+    padding: 12px;
+}
+
+/** Bouton "Rechercher" **/
+.searchbar button {
+    background: var(--main-color);
+    color: white;
+    padding: 12px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+
+.searchbar input[type="submit"]:hover {
+    opacity: 1;
+}  
 
 .main-container {
     width: 100%;
@@ -50,6 +100,7 @@ a {
     margin: 0;
     font-size: 22px;
 }
+
 
 .card {
     background-color: white;
