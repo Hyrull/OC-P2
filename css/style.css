@@ -47,6 +47,9 @@ nav a:hover {
 body {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .recherche > * {
@@ -172,6 +175,10 @@ a {
     font-size: 16px;
 }
 
+.card p {
+    font-size: 14px;
+}
+
 .euro {
     font-weight: 700;
 }
@@ -196,6 +203,60 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements .section-more {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    box-sizing: border-box;
+}
+
+.hebergements-cards a {
+    display: block;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%
+}
+
+.hebergements-cards img {
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -243,6 +304,67 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+.activites {
+    padding:30px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.activites-cards a {
+    display: block;
+    width: 20%;
+}
+
+.activites-cards img {
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+/****** Footer ***********/
+
+footer {
+    background: var(--main-bg-color);
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    flex-wrap: wrap;
+}
+
+footer h2, footer a {
+    padding: 8px;
+    margin: 0px;
+}
 
 
 
