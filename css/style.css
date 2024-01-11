@@ -59,7 +59,14 @@ body {
 }
 
 .searchbar {
-    display:flex;
+    display: flex;
+    flex: 1;
+}
+
+.searchbarparent {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 /** Icone GPS **/
@@ -201,7 +208,7 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
     background-color: var(--main-bg-color);
 }
@@ -255,7 +262,7 @@ a {
     margin-bottom: 5px;
 }
 
-.hebergements .section-more {
+#hebergements .section-more {
     margin-top: 40px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -311,7 +318,7 @@ a {
 
 /****** Activités ***********/
 
-.activites {
+#activites {
     padding:30px;
 }
 
@@ -390,7 +397,7 @@ footer h2, footer a {
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergements {
         width: 100%;
     }
 
@@ -463,6 +470,28 @@ footer h2, footer a {
         padding: 0 30px;
     }
 
+    .searchbarparent {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .searchbar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+
+    }
+
+    .searchbar input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .searchbar button {
+        display: none;
+    }
+
+    /* ... (other styles) */
+
     .searchbar button {
         display:none;
     }
@@ -489,7 +518,7 @@ footer h2, footer a {
         width: 100%;
     }
 
-    .hebergements {
+    #hebergements {
         order: 2;
         background-color: white;
     }
